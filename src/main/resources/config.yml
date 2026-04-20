@@ -1,0 +1,40 @@
+# -==========================================================-
+#                PortalSettings
+#                 by Hue Albescu
+# -==========================================================-
+
+# Enable to see plugin logs/info for debugging purposes
+debug: false
+
+worlds:
+  # Template for general configuration
+  some_world_name:
+    # -=== General === -
+
+    # Sets whether portals can be created
+    # If set to false, it can be bypassed with a permission:
+    # portalsettings.[world_name].portal-create
+    can-create-portals: true
+
+    # -=== Entities ===-
+
+    # true -> The plugin will NOT block entities (items, mobs, etc.) from teleporting
+    # false -> The plugin WILL block entities from teleporting
+    can-entities-teleport: true
+
+    # Allows set entities to bypass the teleport block
+    # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+    entity-whitelist:
+      # - ENTITY_ID
+
+    # Blocks set entities from teleporting even if can-entities-teleport is set to true
+    entity-blacklist:
+      # - ENTITY_ID
+
+    # -=== Players ===-
+
+    # true -> The plugin will NOT block players from teleporting
+    # false -> The plugin WILL block players from teleporting
+    # If set to false, can be bypassed with a permission:
+    # portalsettings.[world_name].portal-teleport
+    can-players-teleport: true

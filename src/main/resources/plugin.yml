@@ -1,0 +1,15 @@
+name: PortalSettings
+version: '${version}'
+
+main: org.albescu.portalSettings.PortalSettings
+api-version: '1.21'
+
+authors: [ Hue Albescu ]
+
+commands:
+  portalsettings:
+    description: Core command
+    usage: /portalsettings [subCommand]
+    aliases: [ps]
+    permission: portalsettings.admin
+

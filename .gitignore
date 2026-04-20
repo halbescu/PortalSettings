@@ -1,0 +1,7 @@
+# Generated Content
+dependency-reduced-pom.xml
+target/
+
+# IDE Directories
+.idea/
+.vscode/
